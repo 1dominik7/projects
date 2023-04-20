@@ -1,0 +1,121 @@
+.products{
+    padding: 30px;
+    display: flex;
+
+    .left{
+        flex: 1;
+        position: sticky;
+        height: 100%;
+        top: 50px;
+
+        .filterItem{
+            margin-bottom: 30px;
+
+            h2{
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            
+            .inputItem{
+                margin-bottom: 10px;
+                
+                label{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .right{
+        flex: 3;
+
+        .catImg{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .products{
+       flex-direction: column;
+       padding: 20px;
+       .left{
+        display: none;
+     }
+    }
+ }
+
+ @media only screen and (min-width: 601px) {
+    .leftMobileContainer{
+       display: none;
+    }
+ }
+
+ @media only screen and (max-width: 600px) {
+    .leftMobileContainer{
+       display: flex;
+       margin-bottom: 10px;
+       border-bottom: 2px solid black;
+        }
+
+        .leftMobileFilters{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            cursor: pointer;
+
+            span{
+                font-size: 35px;
+                font-weight: 500;
+            }
+
+            .icon{
+                font-size: 50px;
+            }
+        }
+
+        .leftMobileFiltersAfter{
+            width: 100%;
+
+            .leftMobileAfter{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+
+                span{
+                    font-size: 35px;
+                    font-weight: 500;
+                }
+
+                .icon{
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .filterItem{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            h2{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+
+        .clearFilters{
+            width: 30%;
+            height: 30px;
+            margin-bottom: 10px;
+            background-color: #2879fe;
+            border-radius: 8px;
+            color: white;
+        }
+ }

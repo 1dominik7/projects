@@ -1,0 +1,75 @@
+.ordersContainer{
+    width: 95vw;
+    margin: 30px 50px 30px 50px;
+
+    .ordersWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        
+        h1{
+            margin-bottom: 20px;
+        }
+
+        .ordersInfo{
+            display: flex;
+            gap: 120px;
+            height: 120px;
+            margin: 10px 0;
+            align-items: center;
+            border-bottom: 2px solid black;
+            font-size: 19px;
+
+            .orderCost{
+                width: 10%;
+            }
+
+            .orderQuantity{
+                width: 10%;
+            }
+
+            .orderTitle{
+                width: 15%;
+            }
+
+            img{
+                width: 5%;
+            }  
+
+            .orderSize{
+                width: 15%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .ordersContainer{
+        .ordersWrapper{
+            .ordersInfo{
+                gap: 70px;
+
+                    img{
+                        width: 8%; 
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .ordersContainer{
+            margin: 20px 20px;
+
+            .ordersWrapper{
+                .ordersInfo{
+                    font-size: 12px;
+                        gap: 40px;
+
+                        img{
+                            transform: scale(2);
+                        }
+                }
+            }
+        }
+    }
+}
