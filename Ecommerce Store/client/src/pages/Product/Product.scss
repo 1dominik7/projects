@@ -1,0 +1,228 @@
+.product{
+    padding: 20px 50px;
+    display: flex;
+    gap: 50px;
+
+    .left{
+        flex: 1;
+        display: flex;
+        gap: 20px;
+
+        .images{
+            flex: 1;
+        
+            img{    
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                cursor: pointer;
+                margin-bottom: 10px;
+            }
+        }
+
+        .mainImg{
+            flex: 5;
+
+            img{
+                width: 100%;
+                max-height: 800px;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .price{
+            font-size: 30px;
+            color: #2879fe;
+            font-weight: 500;
+        }
+
+        .sizeInfo{
+            margin-bottom: -20px;
+        }
+
+        .size{
+            display: inline-block;
+            margin-left: 0;
+            margin-right: auto;
+            border: 2px solid black;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            text-align: justify;
+        }
+
+        .quantity{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 18px;
+
+        button{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            font-size: 24px;
+        }
+        }
+
+        .add{
+            width: 250px;
+            padding: 10px;
+            background-color: #2879fe;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            cursor: pointer;
+            border: none;
+            font-weight: 500;
+        }
+
+        .links{
+            display: flex;
+            gap: 20px;
+
+            .item{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #2879fe;
+                font-size: 14px;
+                cursor: pointer;
+            }
+
+            .itemActive{
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #2879fe;
+                font-size: 14px;
+                cursor: pointer;
+                text-decoration: underline;
+
+                .iconActive{
+                    color: #2879fe;
+            }   
+            }
+        }
+
+        .info{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: gray;
+            font-size: 14px;
+            margin-top: 10px;
+
+           >div{
+            cursor: pointer;
+           }
+
+            hr{
+                width: 200px;
+                border: 1px solid gray;
+            }
+
+            .openInfo{
+                height: 20px;
+            }
+
+            .openInfoAfter{
+                height: 50px;
+                transition: all .4s ease;
+                
+                div{
+                    margin-top: 5px;
+                    color: black;
+                }
+            }  
+        }
+        hr{
+            border: 1px solid gray;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1172px) {
+    .product{
+        .left{
+            .images{
+                    img{
+                    height: 80px; 
+                    }  
+            }
+        }
+
+        .right{
+                h1{
+                font-size: 24px; 
+                }
+
+            .info{
+                    .openInfoAfter:nth-child(3){
+                        height: 100px; 
+                }
+
+                    .openInfoAfter:nth-child(5){
+                        height: 180px;          
+                    }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .product{
+        display: flex;
+        flex-direction: column;
+
+        .left{
+            .images{
+                    .img{
+                        height: 60px;
+                    }
+            }
+
+                .mainImg{
+                    flex:3
+                }
+
+                img{
+                    width: 100%;
+                    max-height: 150px;
+                    object-fit: cover;
+                } 
+        }
+
+            .right{
+                .size{
+                font-size: 18px; 
+                font-weight: 300;
+                }
+
+                select>option{
+                font-size: 12px; 
+                font-weight: 300;
+                }  
+            }
+        }
+    }
+

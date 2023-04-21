@@ -1,0 +1,76 @@
+    .regcontainer  {
+    width: 98.5vw;
+    height: 100vh;
+    background:     
+    linear-gradient(
+        rgb(255,255,255,0.5), 
+        rgb(255,255,255,0.5)
+    ),
+    url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+    center; 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .wrapper {
+    width: 30%;    
+    padding: 20px;
+    background-color: white;
+    
+    .title {
+        font-size: 24px;
+        font-weight: 300;
+    }
+
+    form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+ 
+    input {
+    flex: 1;
+    max-width: 80%;
+    margin: 20px 10px 0 0;
+    padding: 10px;
+    }
+
+    .account{
+        font-size: 18px;
+    }
+
+    span {
+        font-size: 12px;
+        margin: 10px 0px;
+    }
+
+    .alertData{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: red;
+    }
+
+    button {
+        width: 40%;
+        border: none;
+        padding: 15px 20px;
+        background-color: teal;
+        color: white;
+        cursor: pointer;
+    }
+    }
+    }
+
+    @media only screen and (max-width: 1172px) {
+        .wrapper{
+        min-width: 350px; 
+        }
+    }
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .regcontainer{
+            height: 60vh; 
+        }
+    }

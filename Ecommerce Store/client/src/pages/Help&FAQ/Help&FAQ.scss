@@ -1,0 +1,32 @@
+.helpContainer{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+
+    .helpWrapper{
+       text-align: left;
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        
+    .helpBold{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .helpNormal{
+        font-weight:300;
+        margin-bottom: 10px;  
+    }
+}
+}
+
+@media only screen and (max-width: 600px) {
+    .helpContainer{
+        font-size: 16px;
+
+        .helpWrapper{
+            width: 80vw;
+    }
+    }
+}
