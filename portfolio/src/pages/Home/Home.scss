@@ -1,0 +1,1017 @@
+.Container{
+    margin: 40px 0 50px 150px;
+
+    .top{
+        width: 80vw;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+    .profile{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 500px;
+        background-color: var(--primary-color);
+        border-radius: 20px;
+
+        .photo{
+            width: 200px;
+            height: 220px;
+            border-radius: 20px;
+            margin-left: 10px;
+        }
+
+        h1{
+            margin: 10px;
+        }
+
+        span{
+            margin: 10px;
+        }
+
+        .contactDetails{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        .contactButton{
+            width: 90px;
+            height: 40px;
+            margin: 5px 0 10px 10px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            background: var(--background-button-contact);
+            cursor: pointer;
+
+            &:hover{
+            transform: scale(1.05);
+        }
+    }
+        .contactText{
+            display: flex;
+            flex-direction: column;
+            
+            span{
+                margin: 0;
+            }
+        }
+    }
+    }
+
+    .rightTop{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 500px;
+        border-radius: 20px;
+        gap: 10px;
+
+        .map{
+            width: 100%;
+            height: 50%;    
+            border-radius: 20px;
+
+            .location{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px
+            }
+        }
+
+        .knowledge{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            gap: 10px;
+
+            .learningPath{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                overflow: hidden;
+                overflow-y: scroll;
+                width: 50%;
+                border-radius: 20px;
+                background-color: var(--primary-color);
+                font-size: 16px;  
+
+                h1{
+                    margin: 10px;
+                }
+
+                p{
+                    margin: 0px 0px 5px 10px;
+
+                    .icon{
+                        margin-left: 5px;
+                    }
+                }
+                
+                .cssIcon{
+                    color:rgb(38, 77, 228) ;
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .htmlIcon{
+                    color: #E34C26;
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .jsIcon{
+                    color:#c4ac27;
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .reactIcon{
+                    color: #61DBFB;
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .nodeIcon{
+                    color: rgb(60, 135, 58);
+                    width: 22px;
+                    height: 22px;
+                }
+
+               .mongoIcon{
+                width: 22px;
+                height: 22px;
+            }
+            }
+        
+            .skills{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                border-radius: 20px;
+                background-color: var(--primary-color);
+                
+                h1{
+                    margin: 10px;
+                    height: 25%;
+                }
+
+                .skillsIcon{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr; 
+                    justify-items: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 75%;
+                          
+                .jsSkillIcon{
+                   transform: scale(4);
+                    color:#c4ac27;
+                }
+
+                .reactSkillIcon{
+                    transform: scale(4);
+                    color: #61DBFB;
+                }
+               
+                .nodeSkillIcon{
+                    transform: scale(4);
+                    color: rgb(60, 135, 58);
+                }
+
+                .mongoSkillIcon{
+                    width: 70%;
+                    height: 90%;
+                } 
+                }
+            }
+        }
+    }
+}
+
+        .projects{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            width: 80vw;
+            margin-top: 10px;
+            border-radius: 20px;
+            background-color: var(--primary-color);
+
+            h1{
+                margin: 20px;
+            }
+
+            .projectList{
+                display: flex;
+                justify-content: space-around;
+                gap: 30px;
+                margin: 10px;
+                width: 100%;
+                height: 100%;
+
+            .project{
+                position: relative;
+                width: 28%;
+                height: 90%;
+                background-color: #292525;
+                border: 2px solid black;
+                border-radius: 20px;
+                cursor: pointer;
+                transition: all .3s ease;
+               
+                &:hover{
+                    transform: scale(1.05);
+                }
+
+                .imgDescription{
+                    position: absolute;
+                    width: 100%;
+           
+                    .imgProject{
+                        width: 100%;
+                        height: 200px;
+                        border-radius: 20px 20px 0 0;
+                    }
+
+                    .textProject{
+                        display: none;
+                        position: absolute;
+                        left: 20px;
+                        top: 20px;
+                        letter-spacing: 1px;
+                        color: white;
+                    }
+
+                    .titleProject{
+                        color: white;
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin-left: 10px;
+                    }
+
+                    .buttonProject{
+                        position: absolute;
+                        bottom: -15px;
+                        right: 20px;
+                        width: 30px;
+                        height: 30px;
+                        font-size: 25px;
+                        text-align: center;
+                        border-radius: 50%;
+                        color: black;
+                        background-color: white;
+                    }
+                }
+            }
+
+            .project:hover .textProject{
+                display: block;
+            }
+
+            .project:hover .imgProject{
+                filter: brightness(30%);
+                }
+        }
+    }
+
+    .contact{
+        height: 200px;
+        width: 80vw;
+        background-color: var(--primary-color);
+        margin: 10px 0;
+        border-radius: 20px;
+        display: flex;
+
+
+        .links{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+            height: 80%;   
+            margin: auto 0;   
+            
+            .link{
+                width: 15%;
+                height: 100%;
+                position: relative;
+
+
+                .buttonLink{
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    bottom: 0%;
+                    right: -20%;
+                    font-size: 26px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    line-height: 50px;
+                    border-radius: 50%;
+                }
+            }
+            
+            .github{
+                cursor: pointer;
+                transition: all .3s ease;
+
+                .githubImg{
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:hover{
+                    background-color: red;
+                    border-radius: 50%;
+                }
+            }
+
+            .linkedin{
+                height: 100%;
+                transition:all .3s ease ;
+                cursor: pointer;
+
+                .linkedinImg{
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+
+            .gmail{
+                cursor: pointer;
+
+                .gmailImg{
+                    width: 150%;
+                    height: 100%;
+                }
+
+                &:hover .gmailImg{
+                    animation: rotate-gmailImg;
+                    -webkit-animation: rotate-gmailImg .3s linear 3;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate-gmailImg{
+    0%{
+        transform: rotate(0);
+    }
+    35%{
+        transform: rotate(20deg);
+    }
+    70%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+
+    .Container{
+        margin: 40px 0 50px 100px;
+
+        .top{
+        .profile{    
+            h1{
+                font-size: 24px;
+                margin: 5px 10px 5px 10px;
+            }
+    
+            span{
+                font-size: 14px;
+                margin: 5px 10px 10px 10px;
+            }
+        }
+    
+        .rightTop{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 500px;
+            border-radius: 20px;
+            gap: 10px;
+    
+            .knowledge{
+            
+                .learningPath{
+                    font-size: 14px;  
+    
+                    h1{
+                        margin: 10px;
+                        font-size: 22px;
+                    }
+                }
+            
+                .skills{
+                    h1{
+                        margin: 10px;
+                        height: 10%;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    
+            .projects{
+                height: 300px;
+
+                h1{
+                    margin: 10px;
+                }
+    
+                .projectList{
+                    gap: 5px;
+                 
+                .project{
+                    width: 26%;
+                    height: 100%;
+    
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+    
+                    .imgDescription{
+                        .imgProject{
+                            height: 150px;
+                        }
+    
+                        .textProject{
+                            left: 10px;
+                            top: 10px;
+                            font-size: 12px;
+                        }
+    
+                        .titleProject{
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-left: 5px;
+                        }
+    
+                        .buttonProject{
+                            right: 10px;
+                            bottom: -25px;
+                            width: 25px;
+                            height: 25px;
+                            font-size: 20px;  
+                        }
+                    }
+                }
+            }
+        }
+    
+        .contact{ 
+            .links{   
+                .link{
+                    width: 20%;
+        
+                    .buttonLink{
+                        width: 40px;
+                        height: 40px;
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .Container{
+        .projects{
+            .projectList{           
+            .project{
+                .imgDescription{
+                    .titleProject{
+                        font-size: 14px;
+                    }         
+                }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+
+    .Container{
+        margin: 0 0 50px 70px;
+
+    .top{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+
+    .profile{
+        display: grid;
+        grid-template-columns: 30% 65%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "photo title"
+        "photo text"
+        "photo contact";
+        width: 100%;
+        height: 230px;
+        margin: 5px 0;
+
+
+        .photo{
+            grid-area: photo;
+            width: 160px;
+            height: 180px;
+            margin-left: 5px;
+        }
+
+        h1{
+          grid-area: title;
+          font-size: 22px;
+          margin-bottom: 0px;
+        }
+
+        span{
+            grid-area: text;
+            font-size: 14px;
+            margin-top: 0px;
+        }
+
+        .contactDetails{
+            grid-area: contact;
+        }
+    }
+
+    .rightTop{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 320px;
+        margin: 0 0 5px 0;
+
+        .map{
+            width: 100%;
+            height: 320px;    
+
+        }
+
+        .knowledge{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            .learningPath{
+                width: 100%;
+                height: 50%;
+            }
+        
+            .skills{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .skillsIcon{
+                    width: 100%;
+
+                .mongoSkillIcon{
+                    width: 80px;
+                    height: 70px;
+                } 
+                }
+            }
+        }
+    }
+}
+
+        .projects{
+            height: 300px;
+            margin: 15px 0;
+
+            h1{
+                margin: 20px 10px;
+            }
+
+            .projectList{
+                display: flex;
+                justify-content: space-around;
+                gap: 0px;
+                margin: 0px;
+                width: 100%;
+                height: 100%;
+
+            .project{
+                position: relative;
+                width: 28%;
+                height: 80%;
+
+                .imgDescription{
+                    height: 100%;
+           
+                    .imgProject{
+                        height: 70%;
+                    }
+
+                    .textProject{
+                        left: 5px;
+                        top: 5px;
+                        letter-spacing: 0px;    
+                    }
+
+                    .titleProject{
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    .buttonProject{
+                        bottom: 5px;
+                        right: 10px;
+                        width: 25px;
+                        height: 25px;
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        margin: 15px 0;
+
+        .links{
+            .link{
+                width: 25%;
+
+                .buttonLink{
+                    width: 35px;
+                    height: 35px;
+                    font-size: 22px;
+                    line-height: 35px;
+                }
+            }
+
+            .gmail{
+    
+                .gmailImg{
+                    width: 200px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 701px) {
+
+    .Container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0 20px 20px 20px;
+
+    .top{
+        width: 90vw;
+        margin: 10px 0;
+
+    .profile{
+        height: 250px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35% 65%;
+        grid-template-rows: 25% 35% 35%;
+        grid-template-areas: 
+        "photo title"
+        "photo text"
+        "photo contact";
+        margin-top: 20px;
+
+        .photo{
+            max-width: 130px;
+            height: 150px;
+            margin: auto 5px;
+        }
+
+        h1{
+          font-size: 20px;
+        }
+
+        span{
+            font-size: 12px;
+        }
+    }
+
+    .rightTop{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 320px;
+        margin: 10px 0;
+
+        .map{
+            width: 100%;
+            height: 320px;    
+
+        }
+
+        .knowledge{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            .learningPath{
+                width: 100%;
+                height: 50%;
+            }
+        
+            .skills{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+
+                .skillsIcon{
+                    width: 100%;
+
+                .mongoSkillIcon{
+                    width: 70px;
+                    height: 60px;
+                } 
+                }
+            }
+        }
+    }
+}
+
+        .projects{
+            height: 260px;
+            width: 90vw;
+            margin: 10px 0;
+
+            h1{
+                margin: 10px 10px;
+            }
+
+            .projectList{
+            .project{
+                height: 90%;
+
+                .imgDescription{           
+                    .textProject{
+                        font-size: 10px;
+                        left: 5px;
+                        top: 5px;
+                        letter-spacing: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        width: 90vw;
+        margin: 10px 0;
+
+        .links{
+            align-items: center;
+
+            .link{
+                height: 80%;
+                width: 25%;
+
+                .buttonLink{
+                    width: 35px;
+                    height: 35px;
+                    font-size: 22px;
+                    line-height: 35px;
+                }
+            }
+
+            .gmail{
+
+                .gmailImg{
+                    width: 120%;
+                    height: 90%;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .Container{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       margin: 0 20px 20px 20px;
+
+    .top{
+        width: 90vw;
+        height: 870px;
+        margin: 5px 0;
+
+    .profile{
+        height: 250px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 55% 10% 35%;
+        grid-template-areas: 
+        "photo text"
+        "title text"
+        "title contact";
+        margin: 0;
+
+        .photo{
+            max-width: 130px;
+            height: 145px;
+            margin: auto 5px;
+        }
+
+        h1{
+          font-size: 16px;
+          width: 100%;
+        }
+
+        span{
+            margin-top: 5px;
+            font-size: 11px;
+        }
+
+        .contactDetails{
+            flex-direction: column;
+            margin-left: -10px;
+
+        .contactButton{
+            width: 70px;
+            height: 30px;
+            margin: 5px 0 10px 10px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 13px;
+            background:linear-gradient(303deg, #f268e5 0%, rgba(161,43,173,1) 0%, rgba(220,225,74,1) 49%);
+            cursor: pointer;
+
+            &:hover{
+            transform: scale(1.05);
+        }
+    }
+        .contactText{
+            display: flex;
+            flex-direction: column;
+            
+            span{
+                margin: 0;
+            }
+        }
+    }
+    }
+
+    .rightTop{
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 100%;
+        margin: 5px 0;
+
+        .knowledge{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+            gap: 10px;
+
+            .learningPath{
+                height: 40%;
+            }
+            .skills{
+                height: 60%;
+
+                .skillsIcon{
+                    width: 75%;
+                    height: 75%;
+                    margin: 0 auto;
+                          
+                .jsSkillIcon{
+                   transform: scale(4.5);
+                }
+
+                .reactSkillIcon{
+                    transform: scale(4.5);
+                }
+               
+                .nodeSkillIcon{
+                    transform: scale(4.5);
+                }
+
+                .mongoSkillIcon{
+                    width: 80px;
+                    height: 70px;
+                } 
+                }
+            }
+        }
+    }
+}
+
+        .projects{
+            height: 520px;
+            width: 90vw;
+            margin: 5px 0;
+
+            h1{
+                margin: 10px 10px;
+            }
+
+            .projectList{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+
+            .project{
+                width: 70%;
+
+                .imgDescription{           
+                    .textProject{
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        height: 150px;
+        margin: 5px 0;
+
+        .links{
+            .link{
+                height: 70%;
+                width: 26%;
+
+                .buttonLink{
+                    width: 25px;
+                    height: 25px;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .Container{
+        .top{
+        .profile{
+             grid-template-rows: 55% 20% 25%;
+             grid-template-areas: 
+             "photo text"
+             "title text"
+             "contact contact";
+ 
+         .photo{
+             max-width: 120px;
+             height: 140px;
+         }
+ 
+         h1{
+           font-size: 15px;
+         }
+ 
+         span{
+             font-size: 10px;
+         }
+ 
+         .contactDetails{
+             flex-direction: row;
+     }
+    }
+}
+}
+}

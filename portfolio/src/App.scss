@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+:root{
+    --background-button-contact: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 15px, transparent 15px) 0% 0%/20px 20px no-repeat,
+        radial-gradient(circle at 0 100%, #ffffff 0, #ffffff 15px, transparent 15px) 100% 0%/20px 20px no-repeat,
+        radial-gradient(circle at 100% 0, #ffffff 0, #ffffff 15px, transparent 15px) 0% 100%/20px 20px no-repeat,
+        radial-gradient(circle at 0 0, #ffffff 0, #ffffff 15px, transparent 15px) 100% 100%/20px 20px no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 10px) calc(100% - 40px) no-repeat,
+        linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 40px) calc(100% - 10px) no-repeat,
+        linear-gradient(303deg, #f268e5 0%, rgba(161,43,173,1) 0%, rgba(220,225,74,1) 49%);
+  }
+:root {
+    --primary-color: white;
+    --secondary-color: #777;
+    --bg-color: rgb(236, 233, 233);
+    --menu-color: rgb(221, 215, 215);
+    --menu-button-color: rgb(202, 198, 198);
+  }
+ #theme-dark {
+    --primary-color: #d9d9d9;
+    --secondary-color: #818181;
+    --bg-color: #151515;
+    --menu-color: #151515;
+    --menu-button-color: #777;
+
+  }
+
+body{
+    font-family: Montserrat, sans-serif;
+    background-color: var(--bg-color);
+}
