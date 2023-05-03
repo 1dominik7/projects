@@ -84,7 +84,7 @@ const [open,setOpen] = useState(false)
       <div className="projects">
         <h1>Projects</h1>
         <div className="projectList">
-          <div className="project">
+          <Link to="https://github.com/1dominik7/projects/tree/Ecommerce-store" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={eShopImg} alt="" />
               <span className='textProject'>
@@ -93,8 +93,8 @@ const [open,setOpen] = useState(false)
               <div className='titleProject'>Ecommerce store</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
-          <div className="project">
+          </Link>
+          <Link to="https://github.com/1dominik7/projects/tree/TodoApp" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={todoImg} alt="" />
               <span className='textProject'>
@@ -103,8 +103,8 @@ const [open,setOpen] = useState(false)
               <div className='titleProject'>ToDo App</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
-          <div className="project">
+          </Link>
+          <Link to="https://github.com/1dominik7/projects/tree/RockPaperScissors" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={rpsImg} alt="" />
               <span className='textProject'>
@@ -113,7 +113,7 @@ const [open,setOpen] = useState(false)
               <div className='titleProject'> Rock-Paper-Scissors</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
 
