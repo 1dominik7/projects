@@ -100,36 +100,36 @@ const About = () => {
       <div className="projects">
         <h1>Projects</h1>
         <div className="projectList">
-          <div className="project">
+          <Link to="https://github.com/1dominik7/projects/tree/Ecommerce-store" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={eShopImg} alt="" />
               <span className='textProject'>
-              First ipsum, dolor sit amet consectetur adipisicing elit. Veniam tempora iure dolor facere tenetur dolorem, quia quae sapiente vero explicabo sed aspernatur recusandae magnam? Doloremque.
+              A Full Stack E-Commerce App  where peoples can purchase their choosable clothes, built with React and Stripe API.
               </span>
               <div className='titleProject'>Ecommerce store</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
-          <div className="project">
+          </Link>
+          <Link to="https://github.com/1dominik7/projects/tree/TodoApp" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={todoImg} alt="" />
               <span className='textProject'>
-              First ipsum, dolor sit amet consectetur adipisicing elit. Veniam tempora iure dolor facere tenetur dolorem, quia quae sapiente vero explicabo sed aspernatur recusandae magnam? Doloremque.
+              ToDo App used to maintain our day-to-day taks or list everything that we have to do build with React.
               </span>
               <div className='titleProject'>ToDo App</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
-          <div className="project">
+          </Link>
+          <Link to="https://github.com/1dominik7/projects/tree/RockPaperScissors" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={rpsImg} alt="" />
               <span className='textProject'>
-              First ipsum, dolor sit amet consectetur adipisicing elit. Veniam tempora iure dolor facere tenetur dolorem, quia quae sapiente vero explicabo sed aspernatur recusandae magnam? Doloremque.
+              Rock paper scissors game developed using pure HTML CSS and JavaScript
               </span>
               <div className='titleProject'> Rock-Paper-Scissors</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
    </div>
