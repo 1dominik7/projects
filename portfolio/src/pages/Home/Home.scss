@@ -1,368 +1,5 @@
 .Container{
     margin: 40px 0 50px 150px;
-
-    .top{
-        width: 80vw;
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
-
-    .profile{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 500px;
-        background-color: var(--primary-color);
-        border-radius: 20px;
-
-        .photo{
-            width: 200px;
-            height: 220px;
-            border-radius: 20px;
-            margin-left: 10px;
-        }
-
-        h1{
-            margin: 10px;
-        }
-
-        span{
-            margin: 10px;
-        }
-
-        .contactDetails{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-
-        .contactButton{
-            width: 90px;
-            height: 40px;
-            margin: 5px 0 10px 10px;
-            border-radius: 20px;
-            font-weight: 700;
-            font-size: 16px;
-            background: var(--background-button-contact);
-            cursor: pointer;
-
-            &:hover{
-            transform: scale(1.05);
-        }
-    }
-        .contactText{
-            display: flex;
-            flex-direction: column;
-            
-            span{
-                margin: 0;
-            }
-        }
-    }
-    }
-
-    .rightTop{
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-        height: 500px;
-        border-radius: 20px;
-        gap: 10px;
-
-        .map{
-            width: 100%;
-            height: 50%;    
-            border-radius: 20px;
-
-            .location{
-                width: 100%;
-                height: 100%;
-                border-radius: 20px
-            }
-        }
-
-        .knowledge{
-            width: 100%;
-            height: 50%;
-            display: flex;
-            gap: 10px;
-
-            .learningPath{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                overflow: hidden;
-                overflow-y: scroll;
-                width: 50%;
-                border-radius: 20px;
-                background-color: var(--primary-color);
-                font-size: 16px;  
-
-                h1{
-                    margin: 10px;
-                }
-
-                p{
-                    margin: 0px 0px 5px 10px;
-
-                    .icon{
-                        margin-left: 5px;
-                    }
-                }
-                
-                .cssIcon{
-                    color:rgb(38, 77, 228) ;
-                    width: 22px;
-                    height: 22px;
-                }
-
-                .htmlIcon{
-                    color: #E34C26;
-                    width: 22px;
-                    height: 22px;
-                }
-
-                .jsIcon{
-                    color:#c4ac27;
-                    width: 22px;
-                    height: 22px;
-                }
-
-                .reactIcon{
-                    color: #61DBFB;
-                    width: 22px;
-                    height: 22px;
-                }
-
-                .nodeIcon{
-                    color: rgb(60, 135, 58);
-                    width: 22px;
-                    height: 22px;
-                }
-
-               .mongoIcon{
-                width: 22px;
-                height: 22px;
-            }
-            }
-        
-            .skills{
-                display: flex;
-                flex-direction: column;
-                width: 50%;
-                border-radius: 20px;
-                background-color: var(--primary-color);
-                
-                h1{
-                    margin: 10px;
-                    height: 25%;
-                }
-
-                .skillsIcon{
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-template-rows: 1fr 1fr; 
-                    justify-items: center;
-                    align-items: center;
-                    width: 100%;
-                    height: 75%;
-                          
-                .jsSkillIcon{
-                   transform: scale(4);
-                    color:#c4ac27;
-                }
-
-                .reactSkillIcon{
-                    transform: scale(4);
-                    color: #61DBFB;
-                }
-               
-                .nodeSkillIcon{
-                    transform: scale(4);
-                    color: rgb(60, 135, 58);
-                }
-
-                .mongoSkillIcon{
-                    width: 70%;
-                    height: 90%;
-                } 
-                }
-            }
-        }
-    }
-}
-
-        .projects{
-            display: flex;
-            flex-direction: column;
-            height: 400px;
-            width: 80vw;
-            margin-top: 10px;
-            border-radius: 20px;
-            background-color: var(--primary-color);
-
-            h1{
-                margin: 20px;
-            }
-
-            .projectList{
-                display: flex;
-                justify-content: space-around;
-                gap: 30px;
-                margin: 10px;
-                width: 100%;
-                height: 100%;
-
-            .project{
-                position: relative;
-                width: 28%;
-                height: 90%;
-                background-color: #292525;
-                border: 2px solid black;
-                border-radius: 20px;
-                cursor: pointer;
-                transition: all .3s ease;
-               
-                &:hover{
-                    transform: scale(1.05);
-                }
-
-                .imgDescription{
-                    position: absolute;
-                    width: 100%;
-           
-                    .imgProject{
-                        width: 100%;
-                        height: 200px;
-                        border-radius: 20px 20px 0 0;
-                    }
-
-                    .textProject{
-                        display: none;
-                        position: absolute;
-                        left: 20px;
-                        top: 20px;
-                        letter-spacing: 1px;
-                        color: white;
-                    }
-
-                    .titleProject{
-                        color: white;
-                        font-size: 22px;
-                        font-weight: 700;
-                        margin-left: 10px;
-                    }
-
-                    .buttonProject{
-                        position: absolute;
-                        bottom: -15px;
-                        right: 20px;
-                        width: 30px;
-                        height: 30px;
-                        font-size: 25px;
-                        text-align: center;
-                        border-radius: 50%;
-                        color: black;
-                        background-color: white;
-                    }
-                }
-            }
-
-            .project:hover .textProject{
-                display: block;
-            }
-
-            .project:hover .imgProject{
-                filter: brightness(30%);
-                }
-        }
-    }
-
-    .contact{
-        height: 200px;
-        width: 80vw;
-        background-color: var(--primary-color);
-        margin: 10px 0;
-        border-radius: 20px;
-        display: flex;
-
-
-        .links{
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            width: 100%;
-            height: 80%;   
-            margin: auto 0;   
-            
-            .link{
-                width: 15%;
-                height: 100%;
-                position: relative;
-
-
-                .buttonLink{
-                    width: 50px;
-                    height: 50px;
-                    position: absolute;
-                    bottom: 0%;
-                    right: -20%;
-                    font-size: 26px;
-                    background-color: black;
-                    color: white;
-                    text-align: center;
-                    line-height: 50px;
-                    border-radius: 50%;
-                }
-            }
-            
-            .github{
-                cursor: pointer;
-                transition: all .3s ease;
-
-                .githubImg{
-                    width: 100%;
-                    height: 100%;
-                }
-
-                &:hover{
-                    background-color: red;
-                    border-radius: 50%;
-                }
-            }
-
-            .linkedin{
-                height: 100%;
-                transition:all .3s ease ;
-                cursor: pointer;
-
-                .linkedinImg{
-                    width: 100%;
-                    height: 100%;
-                    cursor: pointer;
-                }
-
-                &:hover{
-                    transform: scale(1.05);
-                }
-            }
-
-            .gmail{
-                cursor: pointer;
-
-                .gmailImg{
-                    width: 150%;
-                    height: 100%;
-                }
-
-                &:hover .gmailImg{
-                    animation: rotate-gmailImg;
-                    -webkit-animation: rotate-gmailImg .3s linear 3;
-                }
-            }
-        }
-    }
 }
 
 @keyframes rotate-gmailImg{
@@ -567,7 +204,6 @@
         .map{
             width: 100%;
             height: 320px;    
-
         }
 
         .knowledge{
@@ -589,7 +225,17 @@
 
                 .skillsIcon{
                     width: 100%;
-
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    transform: scale(0.7);
+                    gap: 30px;
+                    
+                .typeScriptSkillIcon{
+                        width: 70px;
+                        height: 70px;
+                    } 
+                
                 .mongoSkillIcon{
                     width: 80px;
                     height: 70px;
@@ -750,6 +396,12 @@
 
                 .skillsIcon{
                     width: 100%;
+
+                .typeScriptSkillIcon
+                    {
+                        width: 60px;
+                        height: 60px;
+                    }
 
                 .mongoSkillIcon{
                     width: 70px;
@@ -912,6 +564,7 @@
                     width: 75%;
                     height: 75%;
                     margin: 0 auto;
+                    gap: 50px;
                           
                 .jsSkillIcon{
                    transform: scale(4.5);
@@ -923,6 +576,11 @@
                
                 .nodeSkillIcon{
                     transform: scale(4.5);
+                }
+
+                .typeScriptSkillIcon{
+                    width: 70px;
+                    height: 70px;
                 }
 
                 .mongoSkillIcon{

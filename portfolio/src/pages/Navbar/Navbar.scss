@@ -110,7 +110,9 @@
         }
 
         .contact{
-            background: var(--background-button-contact)
+            background: var(--background-button-contact);
+            margin: 0 ;
+            justify-content: center;
         }
     }
 }

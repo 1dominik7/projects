@@ -1,0 +1,196 @@
+.top{
+    width: 80vw;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+
+    .photo{
+        width: 200px;
+        height: 220px;
+        border-radius: 20px;
+        margin-left: 10px;
+    }
+
+    h1{
+        margin: 10px;
+    }
+
+    span{
+        margin: 10px;
+    }
+
+    .contactDetails{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    .contactButton{
+        width: 90px;
+        height: 40px;
+        margin: 5px 0 10px 10px;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 16px;
+        background: var(--background-button-contact);
+        cursor: pointer;
+
+        &:hover{
+        transform: scale(1.05);
+    }
+}
+    .contactText{
+        display: flex;
+        flex-direction: column;
+        
+        span{
+            margin: 0;
+        }
+    }
+}
+}
+
+.rightTop{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    gap: 10px;
+
+    .map{
+        width: 100%;
+        height: 50%;    
+        border-radius: 20px;
+
+        .location{
+            width: 100%;
+            height: 100%;
+            border-radius: 20px
+        }
+    }
+
+    .knowledge{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        gap: 10px;
+
+        .learningPath{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            overflow: hidden;
+            overflow-y: scroll;
+            width: 50%;
+            border-radius: 20px;
+            background-color: var(--primary-color);
+            font-size: 16px;  
+
+            h1{
+                margin: 10px;
+            }
+
+            p{
+                margin: 0px 0px 5px 10px;
+
+                .icon{
+                    margin-left: 5px;
+                }
+            }
+            
+            .cssIcon{
+                color:rgb(38, 77, 228) ;
+                width: 22px;
+                height: 22px;
+            }
+
+            .htmlIcon{
+                color: #E34C26;
+                width: 22px;
+                height: 22px;
+            }
+
+            .jsIcon{
+                color:#c4ac27;
+                width: 22px;
+                height: 22px;
+            }
+
+            .reactIcon{
+                color: #61DBFB;
+                width: 22px;
+                height: 22px;
+            }
+
+            .nodeIcon{
+                color: rgb(60, 135, 58);
+                width: 22px;
+                height: 22px;
+            }
+
+           .mongoIcon{
+            width: 22px;
+            height: 22px;
+        }
+        }
+    
+        .skills{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            border-radius: 20px;
+            background-color: var(--primary-color);
+            
+            h1{
+                margin: 10px;
+                height: 25%;
+            }
+
+            .skillsIcon{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr; 
+                justify-items: center;
+                align-items: center;
+                width: 100%;
+                height: 75%;
+                      
+            .jsSkillIcon{
+               transform: scale(4);
+                color:#c4ac27;
+            }
+
+            .reactSkillIcon{
+                transform: scale(4);
+                color: #61DBFB;
+            }
+           
+            .nodeSkillIcon{
+                transform: scale(4);
+                color: rgb(60, 135, 58);
+            }
+
+            .mongoSkillIcon{
+                width: 60%;
+                height: 100%;
+            } 
+
+            .typeScriptSkillIcon{
+                width: 50%;
+                height: 90%;
+            }
+            }
+        }
+    }
+}
+}
