@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight} from "@fortawesome/fontawesome-free-solid"
 import eShopImg from '../../img/eShop.png'
-import rpsImg from '../../img/rock-paper-scissors.png'
+import bookingImg from '../../img/booking.png'
 import todoImg from '../../img/todoapp.png'
 import './ProjectsList.scss'
 
@@ -22,23 +22,23 @@ const ProjectsList = () => {
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
           </Link>
-          <Link to="https://github.com/1dominik7/projects/tree/TodoApp" target="_blank" className="project">
+          <Link to="https://github.com/1dominik7/projects/tree/ToDoApp-TypeScript" target="_blank" className="project">
             <div className="imgDescription">
               <img className='imgProject' src={todoImg} alt="" />
               <span className='textProject'>
-              ToDo App used to maintain our day-to-day taks or list everything that we have to do build with React.
+              ToDo App used to maintain our day-to-day taks or list everything that we have to do build with TypeScript.
               </span>
               <div className='titleProject'>ToDo App</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
           </Link>
-          <Link to="https://github.com/1dominik7/projects/tree/RockPaperScissors" target="_blank" className="project">
+          <Link to="https://github.com/1dominik7/BookingApp" target="_blank" className="project">
             <div className="imgDescription">
-              <img className='imgProject' src={rpsImg} alt="" />
+              <img className='imgProject' src={bookingImg} alt="" />
               <span className='textProject'>
-              Rock paper scissors game developed using pure HTML CSS and JavaScript
+              BookingApp - project in progress - developed using Node.js and React.
               </span>
-              <div className='titleProject'> Rock-Paper-Scissors</div>
+              <div className='titleProject'> Booking App</div>
               <div className='buttonProject'><FontAwesomeIcon className='arrowIcon' icon={faArrowRight}/></div>
             </div>
           </Link>
